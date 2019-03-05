@@ -1,16 +1,24 @@
-import java.util.Scanner;
+package Collection;
+
+import java.util.Iterator;
+import java.util.LinkedHashSet;
 
 public class First
 {
-	public static void main(String[] args) 
-	{
-		Scanner ob = new Scanner(System.in);
-		System.out.println("enter 2 nos");
-		int a= ob.nextInt();
-		int b = ob.nextInt();
-		int c= a+b;
-		System.out.println(c);
-	}
+int empno;
+String name,address;
+public First(int empno,String name,String address)
+{
+	this.empno=empno;
+	this.name=name;
+	this.address=address;
 	
-
 }
+@Override
+public String toString() {
+	return "First [empno=" + empno + ", name=" + name + ", address=" + address + "]";
+}
+		
+	}
+
+
